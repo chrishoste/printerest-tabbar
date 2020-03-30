@@ -3,6 +3,7 @@
 
 - Number 1: [Simple TabBar Onboarding](https://github.com/chrishoste/simpleTabBarOnboarding)
 - Number 2: You're here 😅
+- Number 3: [Bottom Search Bar](https://github.com/chrishoste/bottom-search-bar)
 
 ## Design
 After some exploring this time on [Pinterest](https://www.pinterest.de/) I decided to go for their own `Tab-Bar`-Implementation. 
