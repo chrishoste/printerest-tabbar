@@ -15,4 +15,3 @@ class ViewController: UIViewController {
         view.backgroundColor = .white
     }
 }
-

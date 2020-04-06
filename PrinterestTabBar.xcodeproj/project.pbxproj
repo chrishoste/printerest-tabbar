@@ -10,7 +10,6 @@
 		C4BCEA862430B7180062A872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BCEA852430B7180062A872 /* AppDelegate.swift */; };
 		C4BCEA882430B7180062A872 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BCEA872430B7180062A872 /* SceneDelegate.swift */; };
 		C4BCEA8A2430B7180062A872 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BCEA892430B7180062A872 /* ViewController.swift */; };
-		C4BCEA8D2430B7180062A872 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4BCEA8B2430B7180062A872 /* Main.storyboard */; };
 		C4BCEA8F2430B7190062A872 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4BCEA8E2430B7190062A872 /* Assets.xcassets */; };
 		C4BCEA922430B7190062A872 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4BCEA902430B7190062A872 /* LaunchScreen.storyboard */; };
 		C4BCEA9A2430B7330062A872 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BCEA992430B7330062A872 /* TabBarController.swift */; };
@@ -23,7 +22,6 @@
 		C4BCEA852430B7180062A872 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4BCEA872430B7180062A872 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C4BCEA892430B7180062A872 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C4BCEA8C2430B7180062A872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4BCEA8E2430B7190062A872 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4BCEA912430B7190062A872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4BCEA932430B7190062A872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +41,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C452833F243B36F000753D3C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C4BCEA892430B7180062A872 /* ViewController.swift */,
+				C4BCEA992430B7330062A872 /* TabBarController.swift */,
+				C4BCEA9B2430B8C90062A872 /* Autolayout.swift */,
+				C4BCEA9D2430BC770062A872 /* FloatingBarView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C4528340243B36F600753D3C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4BCEA8E2430B7190062A872 /* Assets.xcassets */,
+				C4BCEA902430B7190062A872 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		C4BCEA792430B7180062A872 = {
 			isa = PBXGroup;
 			children = (
@@ -62,16 +80,11 @@
 		C4BCEA842430B7180062A872 /* PrinterestTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				C4BCEA932430B7190062A872 /* Info.plist */,
 				C4BCEA852430B7180062A872 /* AppDelegate.swift */,
 				C4BCEA872430B7180062A872 /* SceneDelegate.swift */,
-				C4BCEA892430B7180062A872 /* ViewController.swift */,
-				C4BCEA8B2430B7180062A872 /* Main.storyboard */,
-				C4BCEA8E2430B7190062A872 /* Assets.xcassets */,
-				C4BCEA902430B7190062A872 /* LaunchScreen.storyboard */,
-				C4BCEA932430B7190062A872 /* Info.plist */,
-				C4BCEA992430B7330062A872 /* TabBarController.swift */,
-				C4BCEA9B2430B8C90062A872 /* Autolayout.swift */,
-				C4BCEA9D2430BC770062A872 /* FloatingBarView.swift */,
+				C4528340243B36F600753D3C /* Resources */,
+				C452833F243B36F000753D3C /* Controller */,
 			);
 			path = PrinterestTabBar;
 			sourceTree = "<group>";
@@ -86,6 +99,7 @@
 				C4BCEA7E2430B7180062A872 /* Sources */,
 				C4BCEA7F2430B7180062A872 /* Frameworks */,
 				C4BCEA802430B7180062A872 /* Resources */,
+				C4528341243B372E00753D3C /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -136,11 +150,31 @@
 			files = (
 				C4BCEA922430B7190062A872 /* LaunchScreen.storyboard in Resources */,
 				C4BCEA8F2430B7190062A872 /* Assets.xcassets in Resources */,
-				C4BCEA8D2430B7180062A872 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C4528341243B372E00753D3C /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C4BCEA7E2430B7180062A872 /* Sources */ = {
@@ -159,14 +193,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C4BCEA8B2430B7180062A872 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C4BCEA8C2430B7180062A872 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C4BCEA902430B7190062A872 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -5,13 +5,13 @@
 //  Created by Christophe Hoste on 29.03.20.
 //  Copyright © 2020 Christophe Hoste. All rights reserved.
 //
-
+// swiftlint:disable all
 import UIKit
 
 class Tabbarcontoller: UITabBarController {
-    
+
     let floatingTabbarView = FloatingBarView(["house", "bubble.middle.bottom", "bolt.circle", "rectangle.3.offgrid"])
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,7 +22,7 @@ class Tabbarcontoller: UITabBarController {
             createNavViewController(viewController: ViewController(), title: "Settings", imageName: "rectangle.3.offgrid.fill")
         ]
         tabBar.isHidden = true
-        
+
         setupFloatingTabBar()
     }
 
@@ -37,7 +37,7 @@ class Tabbarcontoller: UITabBarController {
 
         return navController
     }
-    
+
     func setupFloatingTabBar() {
         floatingTabbarView.delegate = self
         view.addSubview(floatingTabbarView)

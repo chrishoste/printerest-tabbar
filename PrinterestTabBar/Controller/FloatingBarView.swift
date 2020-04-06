@@ -13,22 +13,22 @@ protocol FloatingBarViewDelegate: AnyObject {
 }
 
 class FloatingBarView: UIView {
-    
+
     weak var delegate: FloatingBarViewDelegate?
-    
+
     var buttons: [UIButton] = []
-    
+
     init(_ items: [String]) {
         super.init(frame: .zero)
         backgroundColor = .white
-        
+
         setupStackView(items)
         updateUI(selectedIndex: 0)
     }
-    
+
     override func layoutSubviews() {
         super.layoutSubviews()
-        
+
         layer.cornerRadius = bounds.height / 2
 
         layer.shadowPath = UIBezierPath(rect: bounds).cgPath
@@ -37,7 +37,7 @@ class FloatingBarView: UIView {
         layer.shadowOffset = .zero
         layer.shadowRadius = bounds.height / 2
     }
-    
+
     func setupStackView(_ items: [String]) {
         for (index, item) in items.enumerated() {
             let symbolConfig = UIImage.SymbolConfiguration(pointSize: 20, weight: .bold, scale: .medium)
@@ -46,13 +46,13 @@ class FloatingBarView: UIView {
             let button = createButton(normalImage: normalImage!, selectedImage: selectedImage!, index: index)
             buttons.append(button)
         }
-        
+
         let stackView = UIStackView(arrangedSubviews: buttons)
-        
+
         addSubview(stackView)
         stackView.fillSuperview(padding: .init(top: 0, left: 16, bottom: 0, right: 16))
     }
-    
+
     func createButton(normalImage: UIImage, selectedImage: UIImage, index: Int) -> UIButton {
         let button = UIButton()
         button.constrainWidth(constant: 60)
@@ -64,14 +64,14 @@ class FloatingBarView: UIView {
         button.addTarget(self, action: #selector(changeTab(_:)), for: .touchUpInside)
         return button
     }
-    
+
     @objc
     func changeTab(_ sender: UIButton) {
         sender.pulse()
         delegate?.did(selectindex: sender.tag)
         updateUI(selectedIndex: sender.tag)
     }
-    
+
     func updateUI(selectedIndex: Int) {
         for (index, button) in buttons.enumerated() {
             if index == selectedIndex {
@@ -87,7 +87,7 @@ class FloatingBarView: UIView {
             }
         }
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

@@ -2,6 +2,7 @@ import Foundation
 import UIKit
 
 // Reference Video: https://youtu.be/iqpAP7s3b-8
+// swiftlint:disable all
 extension UIView {
 
     @discardableResult
