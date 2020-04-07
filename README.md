@@ -11,7 +11,7 @@ After some exploring this time on [Pinterest](https://www.pinterest.de/) I decid
 
 As in my [first challenge](https://github.com/chrishoste/simpleTabBarOnboarding), I have tried to approach the original implementation as closely as possible.
 
-## Youtube
+## Youtube ([Link](https://youtu.be/xXa8CetKSSM))
 <p align="center">
   <a href="https://youtu.be/xXa8CetKSSM">
     <img alt="youtube_thumbnail" src="https://img.youtube.com/vi/xXa8CetKSSM/0.jpg" width="300" />
