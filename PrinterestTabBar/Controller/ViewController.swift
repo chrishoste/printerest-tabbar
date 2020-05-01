@@ -34,6 +34,12 @@ class ViewController: BaseViewController {
         }
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        toogleTabbar(hide: false)
+    }
+
     func setupButton() {
 
         view.addSubview(button)

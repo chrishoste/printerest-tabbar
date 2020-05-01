@@ -14,13 +14,11 @@ class PushViewController: BaseViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         title = "Pushed VC"
-
-        toogleTabbar(hide: true)
     }
 
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
 
-        toogleTabbar(hide: false)
+        toogleTabbar(hide: true)
     }
 }
