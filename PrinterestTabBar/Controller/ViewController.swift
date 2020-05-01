@@ -24,6 +24,17 @@ class ViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+    }
+
+    init(showPushButton: Bool = false) {
+        super.init(nibName: nil, bundle: nil)
+
+        if showPushButton {
+            setupButton()
+        }
+    }
+
+    func setupButton() {
 
         view.addSubview(button)
         button.centerInSuperview()
@@ -34,5 +45,9 @@ class ViewController: BaseViewController {
         let newVC = PushViewController()
         navigationController?.navigationBar.tintColor = .black
         navigationController?.pushViewController(newVC, animated: true)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }

@@ -97,9 +97,10 @@ class FloatingBarView: UIView {
             isHidden = hide
         }
 
-        UIView.animate(withDuration: 0.25, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: 0.25, delay: 0, usingSpringWithDamping: 1,
+                       initialSpringVelocity: 0.5, options: .curveEaseOut, animations: {
             self.alpha = hide ? 0 : 1
-            self.transform = hide ? CGAffineTransform(translationX: 0, y: 20) : .identity
+            self.transform = hide ? CGAffineTransform(translationX: 0, y: 10) : .identity
         }) { (_) in
             if hide {
                 self.isHidden = hide

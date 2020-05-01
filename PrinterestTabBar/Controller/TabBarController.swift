@@ -16,7 +16,7 @@ class Tabbarcontoller: UITabBarController {
         super.viewDidLoad()
 
         viewControllers = [
-            createNavViewController(viewController: ViewController(), title: "Home", imageName: "house.fill"),
+            createNavViewController(viewController: ViewController(showPushButton: true), title: "Home", imageName: "house.fill"),
             createNavViewController(viewController: ViewController(), title: "About", imageName: "bubble.middle.bottom.fill"),
             createNavViewController(viewController: ViewController(), title: "Trending", imageName: "flame.fill"),
             createNavViewController(viewController: ViewController(), title: "Settings", imageName: "rectangle.3.offgrid.fill")
