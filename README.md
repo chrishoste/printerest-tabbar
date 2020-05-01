@@ -22,6 +22,7 @@ As in my [first challenge](https://github.com/chrishoste/simpleTabBarOnboarding)
 
 <p align="center">
   <img height="700" src="https://github.com/chrishoste/printeres-tabbar/blob/master/img/capture.gif">
+  <img height="700" src="https://github.com/chrishoste/printeres-tabbar/blob/master/img/capture2.gif">
 </p>
 
 ## Features
