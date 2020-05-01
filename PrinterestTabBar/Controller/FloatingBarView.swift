@@ -91,6 +91,21 @@ class FloatingBarView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
+    func toggle(hide: Bool) {
+        if !hide {
+            isHidden = hide
+        }
+
+        UIView.animate(withDuration: 0.25, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+            self.alpha = hide ? 0 : 1
+            self.transform = hide ? CGAffineTransform(translationX: 0, y: 20) : .identity
+        }) { (_) in
+            if hide {
+                self.isHidden = hide
+            }
+        }
+    }
 }
 
 extension UIButton {

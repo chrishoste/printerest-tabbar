@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C42098D7245C213400D66F93 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42098D6245C213400D66F93 /* PushViewController.swift */; };
+		C42098D9245C24D000D66F93 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42098D8245C24D000D66F93 /* BaseViewController.swift */; };
 		C4BCEA862430B7180062A872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BCEA852430B7180062A872 /* AppDelegate.swift */; };
 		C4BCEA882430B7180062A872 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BCEA872430B7180062A872 /* SceneDelegate.swift */; };
 		C4BCEA8A2430B7180062A872 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BCEA892430B7180062A872 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C42098D6245C213400D66F93 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
+		C42098D8245C24D000D66F93 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C4BCEA822430B7180062A872 /* PrinterestTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrinterestTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4BCEA852430B7180062A872 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4BCEA872430B7180062A872 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +52,8 @@
 				C4BCEA992430B7330062A872 /* TabBarController.swift */,
 				C4BCEA9B2430B8C90062A872 /* Autolayout.swift */,
 				C4BCEA9D2430BC770062A872 /* FloatingBarView.swift */,
+				C42098D6245C213400D66F93 /* PushViewController.swift */,
+				C42098D8245C24D000D66F93 /* BaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -172,7 +178,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint autocorrect\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -186,7 +192,9 @@
 				C4BCEA9A2430B7330062A872 /* TabBarController.swift in Sources */,
 				C4BCEA862430B7180062A872 /* AppDelegate.swift in Sources */,
 				C4BCEA9E2430BC770062A872 /* FloatingBarView.swift in Sources */,
+				C42098D9245C24D000D66F93 /* BaseViewController.swift in Sources */,
 				C4BCEA882430B7180062A872 /* SceneDelegate.swift in Sources */,
+				C42098D7245C213400D66F93 /* PushViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

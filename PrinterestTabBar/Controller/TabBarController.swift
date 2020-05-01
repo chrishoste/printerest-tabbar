@@ -44,6 +44,10 @@ class Tabbarcontoller: UITabBarController {
         floatingTabbarView.centerXInSuperview()
         floatingTabbarView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50).isActive = true
     }
+    
+    func toggle(hide: Bool) {
+        floatingTabbarView.toggle(hide: hide)
+    }
 }
 
 extension Tabbarcontoller: FloatingBarViewDelegate {
